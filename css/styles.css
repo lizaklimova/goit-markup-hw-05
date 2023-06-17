@@ -934,9 +934,9 @@ input {
 }
 
 .modal-select-wrap {
-  display: inline-flex;
   transition: background-color var(--transition), border var(--transition),
     fill var(--transition);
+  display: inline-flex;
 }
 
 .modal-submit-btn:hover,
