@@ -39,6 +39,7 @@
   --modal-form-label-color: #8e8f99;
   --modal-form-accent-color: #4d5ae5;
   --modal-bg-interactive: #404bbf;
+  --modal-icon-fill: #2e2f42;
 
   /* -----------PORTFOLIO----------- */
   --main-button-background: #f4f4fd;
@@ -556,9 +557,6 @@ input {
   max-width: 453px;
 }
 
-.subscribe-wrapper {
-}
-
 .subscribe-text {
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -576,7 +574,6 @@ input {
   line-height: 1.5;
   background-color: transparent;
   padding-left: 16px;
-  margin-right: 24px;
   color: var(--white-for-project);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
@@ -790,10 +787,6 @@ input {
   text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
-  margin-top: 72px;
-}
-
-.modal-form {
 }
 
 .modal-field {
@@ -834,6 +827,7 @@ input {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  fill: var(--modal-icon-fill);
   transition: fill var(--transition);
 }
 
@@ -912,7 +906,8 @@ input {
   transition: var(--transition);
 }
 
-.icon-select {
+.modal-checkbox:focus + .checkbox-label span {
+  border-color: var(--modal-bg-interactive);
 }
 
 .modal-submit-btn {
